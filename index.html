@@ -6,14 +6,24 @@
 </head>
 <body>
   <h1>Employee Login</h1>
-  <input type="text" id="userID" placeholder="Enter User ID">
-  <button onclick="login()">Login</button>
 
+  <!-- Login Section -->
+  <div id="loginArea">
+    <input type="text" id="userID" placeholder="Enter User ID">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- Employee Area -->
   <div id="employeeArea" style="display:none;">
     <h2>Welcome, <span id="empName"></span></h2>
-    <button onclick="checkIn()">Check In</button>
-    <button onclick="checkOut()">Check Out</button>
 
+    <!-- Attendance -->
+    <div style="text-align:center; margin-bottom:20px;">
+      <button onclick="checkIn()">Check In</button>
+      <button onclick="checkOut()">Check Out</button>
+    </div>
+
+    <!-- Task Update -->
     <h3>Update Task</h3>
     <input type="text" id="taskTitle" placeholder="Task Title">
     <select id="taskStatus">
